@@ -19,7 +19,7 @@ public class Staff extends Role {
     public String getPosition() { return position; }
 
     @Override
-    public String getRoleType() { return "운영진"; }
+    public String getRoleName() { return "운영진"; }
 
     @Override
     public boolean canSubmit() { return submissionPolicy.canSubmit(this); }

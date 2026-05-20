@@ -19,6 +19,5 @@ public class PblSpringApplication {
 		for (String name : context.getBeanDefinitionNames()) {
 			System.out.println("Bean: " + name);
 		}
-
 	}
 }

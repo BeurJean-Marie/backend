@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class HelloController {
 
-    @GetMapping("/hello/{name}")
+    @GetMapping("/hello")
     @ResponseBody  // 추가
     public String hello() {
         return "Hello, Likelion!";
     }
-}
+    }

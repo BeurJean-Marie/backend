@@ -19,7 +19,7 @@ public class Lion extends Role {
     public String getStudentId() { return studentId; }
 
     @Override
-    public String getRoleType() { return "아기사자"; }
+    public String getRoleName() { return "아기사자"; }
 
     @Override
     public boolean canSubmit() { return submissionPolicy.canSubmit(this); }

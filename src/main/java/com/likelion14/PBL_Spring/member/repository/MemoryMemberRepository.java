@@ -1,5 +1,6 @@
 package com.likelion14.PBL_Spring.member.repository;
 
+import com.likelion14.PBL_Spring.member.domain.role.Lion;
 import com.likelion14.PBL_Spring.member.domain.role.Role;
 import org.springframework.stereotype.Repository;
 
@@ -37,6 +38,21 @@ public class MemoryMemberRepository implements MemberRepository {
         }
         return false;
     }
+
+    @Override
+    public void updateByName(String name, Role updated) {
+        for (Role member : members) {
+            if (member.getName().equals(name)) {
+                return;
+            }
+        }
+    }
+
+    @Override
+    public boolean deleteMember(String name) {
+        return members.removeIf(m -> m.getName().equals(name));
+    }
+
 
 }
 
